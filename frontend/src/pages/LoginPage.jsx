@@ -12,7 +12,7 @@ function Loginpage() {
     email: "",
     password: "",
   });
-  const { login, isLoggingIn } = useAuthStore();
+  const { login, isLoggingIng } = useAuthStore();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -94,9 +94,9 @@ function Loginpage() {
             <button
               type="submit"
               className="btn btn-primary w-full"
-              disabled={isLoggingIn}
+              disabled={isLoggingIng}
             >
-              {isLoggingIn ? (
+              {isLoggingIng ? (
                 <>
                   <Loader2 className="h-5 w-5 animate-spin" />
                   Loading...
