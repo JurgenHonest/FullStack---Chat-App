@@ -2,6 +2,7 @@
   "name": "realtime-chat-app",
   "version": "1.0.0",
   "description": "",
+  "homepage": ".",
   "main": "index.js",
   "scripts": {
     "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
