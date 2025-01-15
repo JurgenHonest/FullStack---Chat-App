@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { Loader } from "lucide-react";
 import Navbar from "./components/Navbar";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Homepage from "./pages/Homepage.jsx";
-import SignupPage from "./pages/SignupPage.jsx";
-import LoginPage from "./pages/LoginPage.jsx";
-import SettingsPage from "./pages/SettingsPage.jsx";
-import ProfilePage from "./pages/profilePage.jsx";
-import { useAuthStore } from "./store/useAuthStore.js";
+import Homepage from "./pages/Homepage";
+import SignupPage from "./pages/SignupPage";
+import LoginPage from "./pages/LoginPage";
+import SettingsPage from "./pages/SettingsPage";
+import ProfilePage from "./pages/profilePage";
+import { useAuthStore } from "./store/useAuthStore";
 import { Toaster } from "react-hot-toast";
 import { useThemeStore } from "./store/useThemeStore.js";
 
