@@ -9,7 +9,7 @@ import SettingsPage from "./pages/SettingsPage";
 import ProfilePage from "./pages/profilePage";
 import { useAuthStore } from "./store/useAuthStore";
 import { Toaster } from "react-hot-toast";
-import { useThemeStore } from "./store/useThemeStore.";
+import { useThemeStore } from "./store/useThemeStore.js";
 
 function App() {
   const { authUser, checkAuth, isCheckingAuth, onlineUsers } = useAuthStore();
