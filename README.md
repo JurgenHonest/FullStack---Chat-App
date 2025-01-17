@@ -1,7 +1,5 @@
 # Real-Time Chat Application 📱💬
-![Uploading image (2).png…]()
-
-
+![image (2)](https://github.com/user-attachments/assets/4839e318-13f0-4377-bffc-5e70ec286003)
 
 
 ## Overview
