@@ -1,6 +1,6 @@
 # Real-Time Chat Application 📱💬
 ## Overview
-This is a real-time chat application designed to provide seamless communication between users. It supports instant messaging with a clean and responsive user interface, built for both desktop and mobile devices.
+This real-time chat application provides a seamless and responsive messaging experience. Designed with modern aesthetics and functionality, the app features multiple themes, robust authentication, and real-time communication.
 
 ## Features
 Real-Time Messaging: Uses WebSockets for instant message delivery without page reloads.
