@@ -9,19 +9,19 @@ Typing Indicators: Real-time feedback when other users are typing.
 Read Receipts: Notifications when a message has been read.
 Group Chats: Create and manage group conversations with multiple participants.
 Media Sharing: Supports image, video, and document uploads.
-#### 4. Responsive Design
+### 4. Responsive Design
 Built with Tailwind CSS and DaisyUI, the application is fully responsive, providing a smooth experience across all devices, from desktops to mobile phones.
 Dark Mode: Optional dark theme for comfortable viewing at night.
 ## Tech Stack
-### Front-End:
+## Front-End:
 React with JSX for UI development.
 Bootstrap for styling and responsive layouts.
 WebSocket API for real-time updates.
-### Back-End:
+## Back-End:
 Flask (Python) for API development.
 SQL (SQLite or PostgreSQL) for data persistence.
 Socket.IO (or alternatives) for WebSocket communication.
-### Additional Tools:
+## Additional Tools:
 Python for server-side scripting.
 JavaScript (ES6+) for enhanced interactivity.
 Go (Golang): Exploring integration as an alternative back-end solution for optimized performance.
