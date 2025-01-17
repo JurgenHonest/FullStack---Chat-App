@@ -6,17 +6,16 @@ This real-time chat application provides a seamless and responsive messaging exp
 ### 1. Real-Time Messaging
 Utilizes Socket.IO to ensure seamless real-time message delivery between users.
 ```
-io.on('connection', (socket) => {
-  console.log('User connected:', socket.id);
+io.on("connection", (socket) => {
+  console.log("A user connected", socket.id);
 
-  socket.on('send_message', (data) => {
-    io.emit('receive_message', data); // Broadcast to all users
-  });
+  io.emit("getOnlineUsers", Object.keys(userSocketMap));
 
-  socket.on('disconnect', () => {
-    console.log('User disconnected:', socket.id);
+  socket.on("disconnect", () => {
+    console.log("A user disconnected", socket.id);
+    delete userSocketMap[userId];
+    io.emit("getOnlineUsers", Object.keys(userSocketMap));
   });
-});
 ```
 ### 2. Secure User Authentication
 User accounts are secured with bcrypt for password hashing and JWT for authentication.
