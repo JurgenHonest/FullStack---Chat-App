@@ -3,6 +3,7 @@
 
 
 
+
 ## Overview
 This real-time chat application provides a seamless and responsive messaging experience. Designed with modern aesthetics and functionality, the app features multiple themes, robust authentication, and real-time communication.
 
