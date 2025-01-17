@@ -23,33 +23,47 @@ User accounts are secured with bcrypt for password hashing and JWT for authentic
 
 ### 3. Dynamic Themes
 Supports 26 themes with Tailwind CSS and DaisyUI for complete customization.
-Typing Indicators: Real-time feedback when other users are typing.
+
 ### 4. Responsive Design
 Built with Tailwind CSS and DaisyUI, the application is fully responsive, providing a smooth experience across all devices, from desktops to mobile phones.
-Dark Mode: Optional dark theme for comfortable viewing at night.
+
 ### 5. Media Sharing
 Users can upload and share images or files securely through Cloudinary.
-Read Receipts: Notifications when a message has been read.
-Group Chats: Create and manage group conversations with multiple participants.
-Media Sharing: Supports image, video, and document uploads.
-### 4. Responsive Design
-Built with Tailwind CSS and DaisyUI, the application is fully responsive, providing a smooth experience across all devices, from desktops to mobile phones.
-Dark Mode: Optional dark theme for comfortable viewing at night.
+```
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
+```
+
 ## Tech Stack
+
 ## Front-End:
 React with JSX for UI development.<br>
 Tailwind CSS and DaisyUI for styling and themes
+
 ## Back-End:
 Node.js with Express for the server.<br>
 MongoDB for database management.<br>
 Socket.IO for real-time messaging
+
 ## Additional Tools:
-bcrypt for password hashing<br>
-JWT for authentication<br>
-Cloudinary for media storage<br>
-dotenv for environment configuration<br>
-cookie-parser for handling cookies<br>
-CORS for managing cross-origin requests
+1. bcrypt for password hashing<br>
+2. JWT for authentication<br>
+3. Cloudinary for media storage<br>
+4. dotenv for environment configuration<br>
+5. cookie-parser for handling cookies<br>
+6. CORS for managing cross-origin requests
+
+###   To install: 
+Must have node installed from browsers
+```
+//create package.json
+npm init -y
+npm install express socket.io mongoose bcrypt jsonwebtoken cors cookie-parser dotenv multer cloudinary multer-storage-cloudinary
+```
+
 
 ## Deployment
 The application is live and deployed on Render.com. Check it out here: Your App URL.
