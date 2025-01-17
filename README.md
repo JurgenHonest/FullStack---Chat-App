@@ -5,6 +5,9 @@
 ## Overview
 This real-time chat application provides a seamless and responsive messaging experience. Designed with modern aesthetics and functionality, the app features multiple themes, robust authentication, and real-time communication.
 
+## Deployment
+The application is live and deployed on Render.com. Check it out here: https://fullstack-chat-app-ydz9.onrender.com/
+
 ## Features
 ### 1. Real-Time Messaging
 Utilizes Socket.IO to ensure seamless real-time message delivery between users.
@@ -97,9 +100,6 @@ Must have node installed from browsers
 npm init -y
 npm install express socket.io mongoose bcrypt jsonwebtoken cors cookie-parser dotenv multer cloudinary multer-storage-cloudinary
 ```
-
-## Deployment
-The application is live and deployed on Render.com. Check it out here: Your App URL.
 
 ## How It Works
 #### 1. User Authentication: 
