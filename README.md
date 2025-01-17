@@ -9,7 +9,8 @@ Typing Indicators: Real-time feedback when other users are typing.
 Read Receipts: Notifications when a message has been read.
 Group Chats: Create and manage group conversations with multiple participants.
 Media Sharing: Supports image, video, and document uploads.
-Responsive Design: Built with Bootstrap for a user-friendly experience across all devices.
+#### 4. Responsive Design
+Built with Tailwind CSS and DaisyUI, the application is fully responsive, providing a smooth experience across all devices, from desktops to mobile phones.
 Dark Mode: Optional dark theme for comfortable viewing at night.
 ## Tech Stack
 ### Front-End:
