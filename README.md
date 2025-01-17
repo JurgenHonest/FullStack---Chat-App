@@ -50,6 +50,9 @@ Cloudinary for media storage<br>
 dotenv for environment configuration<br>
 cookie-parser for handling cookies<br>
 CORS for managing cross-origin requests
+
+## Deployment
+The application is live and deployed on Render.com. Check it out here: Your App URL.
 ## How It Works
 ### 1. User Authentication: 
 Users register or log in securely using hashed passwords and JWT.
