@@ -1,4 +1,12 @@
 # Real-Time Chat Application 📱💬
+![Screenshot 2025-01-17 125808](https://github.com/user-attachments/assets/67251f65-2ace-4ced-a469-0d01eeb37cf6)
+![Screenshot 2025-01-17 125756](https://github.com/user-attachments/assets/fd471e92-2da1-42f2-baac-1dccf0f64286)
+![Screenshot 2025-01-17 125624](https://github.com/user-attachments/assets/da233800-6269-42d7-82ee-24906840fe86)
+
+![Screenshot 2025-01-17 125724](https://github.com/user-attachments/assets/92c9e754-fc4e-4b2c-975b-09d8edb095e4)
+![Screenshot 2025-01-17 125644](https://github.com/user-attachments/assets/477e267e-b018-4d63-bd88-0fb286a0515d)
+
+
 ## Overview
 This real-time chat application provides a seamless and responsive messaging experience. Designed with modern aesthetics and functionality, the app features multiple themes, robust authentication, and real-time communication.
 
