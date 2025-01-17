@@ -68,18 +68,19 @@ npm install express socket.io mongoose bcrypt jsonwebtoken cors cookie-parser do
 ## Deployment
 The application is live and deployed on Render.com. Check it out here: Your App URL.
 ## How It Works
-### 1. User Authentication: 
+#### 1. User Authentication: 
 Users register or log in securely using hashed passwords and JWT.
-### 2. Real-Time Communication: 
+#### 2. Real-Time Communication: 
 Messages are exchanged instantly using Socket.IO.
-### 3. Database Storage: 
+#### 3. Database Storage: 
 MongoDB stores user data, messages, and media links.
-### 4. Dynamic Themes:
+#### 4. Dynamic Themes:
 Users can switch between 26 available themes.
-### 5.Responsive UI: 
+#### 5.Responsive UI: 
 Tailored for desktops and mobile devices with responsive design.
+
 ### Future Plans
-Implement AI-based message filtering for spam detection.
-Integrate end-to-end encryption for enhanced security.
-Introduce voice and video calling features.
+1. Implement AI-based message filtering for spam detection.
+2. Integrate end-to-end encryption for enhanced security.
+3. Introduce voice and video calling features.
 
