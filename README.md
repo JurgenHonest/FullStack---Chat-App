@@ -45,11 +45,12 @@ export const generateToken = (userId, res) => {
 };
 ```
 
-### 3. Dynamic Themes
-Supports 26 themes with Tailwind CSS and DaisyUI for complete customization.
+### 🎨 Dynamic Themes
+- Supports 26 customizable themes using Tailwind CSS and DaisyUI.
 
-### 4. Responsive Design
-Built with Tailwind CSS and DaisyUI, the application is fully responsive, providing a smooth experience across all devices, from desktops to mobile phones.
+### 📱 Responsive Design
+- Fully responsive UI for desktops, tablets, and mobile devices.
+- Built with Tailwind CSS and DaisyUI, the application is fully responsive, providing a smooth experience across all devices, from desktops to mobile phones.
 ```
 <div
       data-theme={theme}
@@ -65,8 +66,9 @@ Built with Tailwind CSS and DaisyUI, the application is fully responsive, provid
     </div>
 ```
 
-### 5. Media Sharing
-Users can upload and share images or files securely through Cloudinary.
+### 🖼️ Media Sharing
+- Upload and share images/files seamlessly through Cloudinary integration.
+
 ```
 cloudinary.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
@@ -75,16 +77,16 @@ cloudinary.config({
 });
 ```
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 ## Front-End:
-React with JSX for UI development.<br>
-Tailwind CSS and DaisyUI for styling and themes
+- React with JSX for UI development.<br>
+- Tailwind CSS and DaisyUI for styling and themes
 
 ## Back-End:
-Node.js with Express for the server.<br>
-MongoDB for database management.<br>
-Socket.IO for real-time messaging
+- Node.js with Express for the server.<br>
+- MongoDB for database management.<br>
+- Socket.IO for real-time messaging
 
 ## Additional Tools:
 1. bcrypt for password hashing<br>
