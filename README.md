@@ -5,11 +5,13 @@
 ## Overview
 This real-time chat application delivers a modern, seamless messaging experience. Packed with features like real-time communication, secure authentication, media sharing, and dynamic themes, it’s designed to provide both functionality and aesthetics.
 
-🌟 Live Demo: Check it out [here](https://fullstack-chat-app-ydz9.onrender.com/)
+🌟 **Live Demo:**  Check it out [here](https://fullstack-chat-app-ydz9.onrender.com/)
+
+---
 
 ## 🚀 Features
-🔴 Real-Time Messaging
-- Powered by Socket.IO, ensuring instant message delivery between users.
+### 🔴 Real-Time Messaging
+- **Powered by Socket.IO**,, ensuring instant message delivery between users.
 - Efficient handling of user connections and disconnections.
 ```
 io.on("connection", (socket) => {
@@ -23,9 +25,10 @@ io.on("connection", (socket) => {
     io.emit("getOnlineUsers", Object.keys(userSocketMap));
   });
 ```
+
 ### 🔒 Secure User Authentication
-- Password hashing with bcrypt ensures data safety.
-- JWT (JSON Web Tokens) for secure session management.
+- **Password hashing** with bcrypt ensures data safety.
+- **JWT** (JSON Web Tokens) for secure session management.
 ```
 import jwt from "jsonwebtoken";
 
@@ -46,7 +49,7 @@ export const generateToken = (userId, res) => {
 ```
 
 ### 🎨 Dynamic Themes
-- Supports 26 customizable themes using Tailwind CSS and DaisyUI.
+- Supports **26 customizable themes** using Tailwind CSS and DaisyUI.
 
 ### 📱 Responsive Design
 - Fully responsive UI for desktops, tablets, and mobile devices.
@@ -67,7 +70,7 @@ export const generateToken = (userId, res) => {
 ```
 
 ### 🖼️ Media Sharing
-- Upload and share images/files seamlessly through Cloudinary integration.
+- Upload and share images/files seamlessly through **Cloudinary** integration.
 
 ```
 cloudinary.config({
@@ -76,6 +79,7 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 ```
+----
 
 ## 🛠️ Tech Stack
 
@@ -95,6 +99,33 @@ cloudinary.config({
 4. dotenv for environment configuration<br>
 5. cookie-parser for handling cookies<br>
 6. CORS for managing cross-origin requests
+
+## 📡 API Documentation  
+
+### 🌐 Back-End APIs  
+
+| **Endpoint**              | **Method** | **Description**                     | **Authentication** |
+|---------------------------|------------|-------------------------------------|---------------------|
+| `/api/auth/register`      | POST       | Registers a new user                | No                  |
+| `/api/auth/login`         | POST       | Logs in a user                      | No                  |
+| `/api/auth/logout`        | GET        | Logs out the user                   | Yes (JWT)           |
+| `/api/users/`             | GET        | Fetch all registered users          | Yes (JWT)           |
+| `/api/messages/`          | GET        | Fetch all messages between users    | Yes (JWT)           |
+| `/api/messages/send`      | POST       | Sends a new message                 | Yes (JWT)           |
+| `/api/upload/image`       | POST       | Uploads an image via Cloudinary     | Yes (JWT)           |
+
+---
+
+### 🌐 Front-End APIs  
+
+| **Feature**               | **Description**                               | **Dependencies**             |
+|---------------------------|-----------------------------------------------|-------------------------------|
+| **Authentication**        | Handles user login, registration, and logout | Axios, JWT cookies           |
+| **User Management**        | Fetches and displays the list of all users   | Axios, Socket.IO             |
+| **Real-Time Messaging**   | Enables chat functionality between users      | Socket.IO for WebSocket comm |
+| **Media Sharing**         | Allows users to upload and share files/images| Axios, Cloudinary API        |
+| **Theme Switching**       | Lets users toggle between 26 themes          | DaisyUI                      |
+
 
 ###   To install: 
 Must have node installed from browsers
