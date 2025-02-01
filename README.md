@@ -161,7 +161,7 @@ Messages are exchanged instantly using **Socket.IO**.
 4. Dynamic Themes:
 Users can switch between 26 available themes.
 
-5.Responsive UI: 
+5. Responsive UI: 
 Tailored for desktops and mobile devices with responsive design.
 
 ---
