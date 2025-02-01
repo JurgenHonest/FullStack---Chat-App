@@ -106,17 +106,19 @@ cloudinary.config({
 
 ### 🌐 Back-End APIs  
 
-| **Endpoint**              | **Method** | **Description**                     | **Authentication** |
-|---------------------------|------------|-------------------------------------|---------------------|
-| `/api/auth/register`      | POST       | Registers a new user                | No                  |
-| `/api/auth/login`         | POST       | Logs in a user                      | No                  |
-| `/api/auth/logout`        | GET        | Logs out the user                   | Yes (JWT)           |
-| `/api/users/`             | GET        | Fetch all registered users          | Yes (JWT)           |
-| `/api/messages/`          | GET        | Fetch all messages between users    | Yes (JWT)           |
-| `/api/messages/send`      | POST       | Sends a new message                 | Yes (JWT)           |
-| `/api/upload/image`       | POST       | Uploads an image via Cloudinary     | Yes (JWT)           |
+| **Endpoint**                | **Method** | **Description**                                | **Authentication** |
+|-----------------------------|------------|------------------------------------------------|---------------------|
+| `/api/auth/signup`          | POST       | Registers a new user                          | No                  |
+| `/api/auth/login`           | POST       | Logs in a user                                | No                  |
+| `/api/auth/logout`          | POST       | Logs out the user                             | Yes (JWT)           |
+| `/api/auth/check`           | GET        | Checks if the user is authenticated           | Yes (JWT)           |
+| `/api/users`                | GET        | Fetches all users for the sidebar             | Yes (JWT)           |
+| `/api/messages/:id`         | GET        | Fetches all messages between the current user and another user | Yes (JWT) |
+| `/api/messages/send/:id`    | POST       | Sends a new message to a specific user        | Yes (JWT)           |
+| `/api/upload/image`         | POST       | Uploads an image via Cloudinary               | Yes (JWT)           |
+| `/api/profile/update-profile` | PUT       | Updates user profile information              | Yes (JWT)           |
 
----
+----
 
 ### 🌐 Front-End APIs  
 
