@@ -145,7 +145,7 @@ npm init -y
 npm install express socket.io mongoose bcrypt jsonwebtoken cors cookie-parser dotenv multer cloudinary multer-storage-cloudinary
 ```
 
-##⚙️ How It Works
+## ⚙️ How It Works
 ### 1. User Authentication: 
 Users register or log in securely using hashed passwords and **JWT**.
 #### 2. Real-Time Communication: 
