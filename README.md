@@ -145,20 +145,25 @@ npm init -y
 npm install express socket.io mongoose bcrypt jsonwebtoken cors cookie-parser dotenv multer cloudinary multer-storage-cloudinary
 ```
 
-## How It Works
-#### 1. User Authentication: 
-Users register or log in securely using hashed passwords and JWT.
+##⚙️ How It Works
+### 1. User Authentication: 
+Users register or log in securely using hashed passwords and **JWT**.
 #### 2. Real-Time Communication: 
-Messages are exchanged instantly using Socket.IO.
+Messages are exchanged instantly using **Socket.IO**.
 #### 3. Database Storage: 
-MongoDB stores user data, messages, and media links.
+**MongoDB** stores user data, messages, and media links.
 #### 4. Dynamic Themes:
 Users can switch between 26 available themes.
 #### 5.Responsive UI: 
 Tailored for desktops and mobile devices with responsive design.
 
-## Future Plans
-1. Implement AI-based message filtering for spam detection.
-2. Integrate end-to-end encryption for enhanced security.
-3. Introduce voice and video calling features.
+## 🚧 Future Enhancements
+1. AI-Based Message Filtering:
+Detect and block spam messages in real time.
+
+2. End-to-End Encryption:
+Improve privacy and data security.
+
+3. Voice & Video Calling:
+Add support for multimedia communication.
 
