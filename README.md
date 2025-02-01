@@ -144,18 +144,21 @@ npm init -y
 // Install required dependencies
 npm install express socket.io mongoose bcrypt jsonwebtoken cors cookie-parser dotenv multer cloudinary multer-storage-cloudinary
 ```
+----
 
 ## ⚙️ How It Works
-### 1. User Authentication: 
+1. User Authentication: 
 Users register or log in securely using hashed passwords and **JWT**.
-#### 2. Real-Time Communication: 
+2. Real-Time Communication: 
 Messages are exchanged instantly using **Socket.IO**.
-#### 3. Database Storage: 
+3. Database Storage: 
 **MongoDB** stores user data, messages, and media links.
-#### 4. Dynamic Themes:
+4. Dynamic Themes:
 Users can switch between 26 available themes.
-#### 5.Responsive UI: 
+5.Responsive UI: 
 Tailored for desktops and mobile devices with responsive design.
+
+---
 
 ## 🚧 Future Enhancements
 1. AI-Based Message Filtering:
