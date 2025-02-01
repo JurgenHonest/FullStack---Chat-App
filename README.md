@@ -100,6 +100,8 @@ cloudinary.config({
 5. cookie-parser for handling cookies<br>
 6. CORS for managing cross-origin requests
 
+----
+
 ## 📡 API Documentation  
 
 ### 🌐 Back-End APIs  
@@ -126,12 +128,20 @@ cloudinary.config({
 | **Media Sharing**         | Allows users to upload and share files/images| Axios, Cloudinary API        |
 | **Theme Switching**       | Lets users toggle between 26 themes          | DaisyUI                      |
 
+----
 
-###   To install: 
-Must have node installed from browsers
+## 📦 Installation  
+
+### Prerequisites:  
+- Node.js must be installed.  
+
+### Install Dependencies:  
+
 ```
-//create package.json
+// Initialize package.json
 npm init -y
+
+// Install required dependencies
 npm install express socket.io mongoose bcrypt jsonwebtoken cors cookie-parser dotenv multer cloudinary multer-storage-cloudinary
 ```
 
