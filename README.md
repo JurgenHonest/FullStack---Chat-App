@@ -149,12 +149,16 @@ npm install express socket.io mongoose bcrypt jsonwebtoken cors cookie-parser do
 ## ⚙️ How It Works
 1. User Authentication: 
 Users register or log in securely using hashed passwords and **JWT**.
+
 2. Real-Time Communication: 
 Messages are exchanged instantly using **Socket.IO**.
+
 3. Database Storage: 
 **MongoDB** stores user data, messages, and media links.
+
 4. Dynamic Themes:
 Users can switch between 26 available themes.
+
 5.Responsive UI: 
 Tailored for desktops and mobile devices with responsive design.
 
@@ -170,3 +174,4 @@ Improve privacy and data security.
 3. Voice & Video Calling:
 Add support for multimedia communication.
 
+----
