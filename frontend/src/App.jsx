@@ -16,7 +16,7 @@ function App() {
 
   const { theme } = useThemeStore();
 
-  console.log({ onlineUsers });
+  // console.log({ onlineUsers });
 
   useEffect(() => {
     checkAuth();
