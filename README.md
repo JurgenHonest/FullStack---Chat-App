@@ -44,49 +44,47 @@ This real-time chat application delivers a modern, seamless messaging experience
 │   │   │   ├── useThemeStore.js
 │   │   ├── App.js                  # Main app component
 │   │   ├── main.jsx                # Entry point for React app
-│   │   ├── index.css               # # CSS or Tailwind configuration files
-|   ├── favicon-32x32.png       # App icon
-|   ├── Readme.md               # Installed md file
-|   ├── index.html              # Main HTML file
-|   ├── package-lock.json       # Detailed description of dependencies and core materials
-│   ├── .eslintrc.json          # ESLint configuration
-│   ├── postcss.config.js       # PostCSS configuration
-│   ├── tailwind.config.js      # Tailwind CSS configuration
-│   ├── vite.config.js          # Vite configuration
-│   └── package.json            # Dependencies for front-end    
+│   │   ├── index.css               # CSS or Tailwind configuration files
+|   ├── favicon-32x32.png           # App icon
+|   ├── Readme.md                   # Installed md file
+|   ├── index.html                  # Main HTML file
+|   ├── package-lock.json           # Detailed description of dependencies and core materials
+│   ├── eslint.config.js.json       # ESLint configuration
+│   ├── postcss.config.js           # PostCSS configuration
+│   ├── tailwind.config.js          # Tailwind CSS configuration
+│   ├── vite.config.js              # Vite configuration
+│   └── package.json                # Dependencies for front-end    
 |
-├── backend/                     # Back-end application
-│   ├── config/                 # Configuration files
-│   │   ├── db.js               # MongoDB connection
-│   │   ├── cloudinary.js       # Cloudinary configuration
-│   │   └── env.js              # Environment variables setup
-│   ├── controllers/            # Business logic for routes
-│   │   ├── authController.js   # Authentication-related logic
-│   │   ├── messageController.js # Message-related logic
-│   │   └── userController.js   # User-related logic
-│   ├── middlewares/            # Custom middleware (e.g., authentication)
-│   │   ├── protectRoute.js     # JWT authentication middleware
-│   │   └── errorHandler.js     # Error handling middleware
-│   ├── models/                 # Mongoose schemas
-│   │   ├── User.js             # User schema
-│   │   ├── Message.js          # Message schema
-│   │   └── Profile.js          # Profile schema
-│   ├── routes/                 # API routes
-│   │   ├── authRoutes.js       # Auth-related routes
-│   │   ├── userRoutes.js       # User-related routes
-│   │   └── messageRoutes.js    # Message-related routes
-│   ├── sockets/                # Socket.IO event handlers
-│   │   └── chatSocket.js       # Chat socket logic
-│   ├── utils/                  # Utility functions
-│   │   ├── generateToken.js    # JWT token generator
-│   │   └── validateInputs.js   # Input validation helpers
-│   ├── server.js               # Main server file
-│   └── package.json            # Dependencies for back-end
-│
-├── .env                        # Environment variables
-├── .gitignore                  # Files and directories to ignore in Git
-├── README.md                   # Project documentation
-└── package.json                # Dependencies for the entire project
+|  ├── 📁 backend/                    # Back-end application
+|  ├── 📂 src/                        # Source folder for the backend
+|  │   ├── 📂 controllers/            # Business logic for routes
+|  │   │   ├── authController.js       # Authentication-related logic
+|  │   │   ├── messageController.js    # Message-related logic
+|  │   ├── 📂 lib/                    # Configuration files
+|  │   │   ├── db.js                   # MongoDB connection
+|  │   │   ├── cloudinary.js           # Cloudinary configuration
+|  │   │   ├── socket.js               # Socket configuration
+|  │   │   └── env.js                  # Environment variables setup
+|  │   ├── 📂 middleware/             # Custom middleware (e.g., authentication)
+|  │   │   └── authMiddelware.js       # Error handling middleware
+|  │   ├── 📂 models/                 # Mongoose schemas
+|  │   │   ├── usersmodel.js           # User schema
+|  │   │   └── messagemodel.js         # Message schema
+|  │   ├── 📂 routes/                 # API routes
+|  │   │   ├── authRoutes.js           # Auth-related routes
+|  │   │   └── messageRoutes.js        # Message-related routes
+|  │   ├── 📂 seeds/                  # Seeds as a test users
+|  │   │   └── user.seeds.js           # list of test users
+|  │   ├── 📂 utils/                  # Utility functions
+|  │   │   ├── generateToken.js        # JWT token generator
+|  │   │   └── validateInputs.js       # Input validation helpers           
+|  │   └── index.js                   # Main server file
+|  ├── package.json               # Dependencies for back-end
+|  ├── package-lock.json          # Lock file for dependencies
+|  └──.env                       # Environment variables
+├── .gitignore                 # Files and directories to ignore in Git
+├── README.md                  # Project documentation
+└── package.json               # Dependencies for the entire project
 ```
 ---
 
