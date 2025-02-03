@@ -8,97 +8,6 @@ This real-time chat application delivers a modern, seamless messaging experience
 🌟 **Live Demo:**  Check it out [here](https://fullstack-chat-app-ydz9.onrender.com/)
 
 ---
-📂 Project Structure
-```
-📁 Project-Directory/
-├── 📁 frontend/                  # Front-end application
-│   ├── 📁 public/                # Public folder for static assets
-│   │   ├── avatar.png             # default profile picture
-│   │   └── vite.png       
-│   │   
-│   ├── 📁 src/                    # Source files for React app
-│   │   ├── 📁 components/         # Reusable UI components
-│   │   │   ├── AuthImagePattern.jsx
-│   │   │   ├── ChatContainer.jsx
-│   │   │   ├── ChatHeader.jsx
-│   │   │   ├── MessageInput.jsx
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── NoChatSelected.jsx
-│   │   │   ├── Sidebar.jsx
-│   │   │   └── 📁 skeletons/       # Placeholder skeleton components
-│   │   │       ├── MessageSkeleton.jsx
-│   │   │       └── SidebarSkeleton.jsx
-|   |   |
-│   │   ├── 📁 constant/            # Context for global state management
-│   │   │   └── index.js
-|   |   |   
-│   │   ├── 📁 lib/                 # Api calls
-│   │   │   ├── axios.js
-│   │   │  └── utils.js
-|   |   |   
-│   │   ├── 📁 pages/               # Page-level components 
-│   │   │   ├── Homepage.jsx
-│   │   │   ├── LoginPage.jsx
-│   │   │   ├── SettingsPage.jsx
-│   │   │   └── ProfilePage.jsx
-|   |   |
-│   │   ├── 📁 store/               # State Managment Files 
-│   │   │   ├── useAuthStore.js
-│   │   │   ├── useChatStore.js
-│   │   │   └── useThemeStore.js
-|   |   |
-│   │   ├── App.js                  # Main app component
-│   │   ├── main.jsx                # Entry point for React app
-│   │   └── index.css               # CSS or Tailwind configuration files
-|   |   
-|   ├── favicon-32x32.png           # App icon
-|   ├── Readme.md                   # Installed md file
-|   ├── index.html                  # Main HTML file
-|   ├── package-lock.json           # Detailed description of dependencies and core materials
-│   ├── eslint.config.js.json       # ESLint configuration
-│   ├── postcss.config.js           # PostCSS configuration
-│   ├── tailwind.config.js          # Tailwind CSS configuration
-│   ├── vite.config.js              # Vite configuration
-│   └── package.json                # Dependencies for front-end    
-|
-|   ├── 📁 backend/                    # Back-end application
-|   ├── 📂 src/                        # Source folder for the backend
-|   │   ├── 📂 controllers/            # Business logic for routes
-|   │   │   ├── authController.js       # Authentication-related logic
-|   │   │   └── messageController.js    # Message-related logic
-|   |   |  
-|   │   ├── 📂 lib/                    # Configuration files
-|   │   │   ├── db.js                   # MongoDB connection
-|   │   │   ├── cloudinary.js           # Cloudinary configuration
-|   │   │   ├── socket.js               # Socket configuration
-|   │   │   └── utils.js                
-|   |   |
-|   │   ├── 📂 middleware/             # Custom middleware (e.g., authentication)
-|   │   │   └── authMiddelware.js       # Error handling middleware
-|   |   |
-|   │   ├── 📂 models/                 # Mongoose schemas
-|   │   │   ├── usersmodel.js           # User schema
-|   │   │   └── messagemodel.js         # Message schema
-|   |   |
-|   │   ├── 📂 routes/                 # API routes
-|   │   │   ├── authRoutes.js           # Auth-related routes
-|   │   │   └── messageRoutes.js        # Message-related routes
-|   |   |
-|   │   ├── 📂 seeds/                  # Seeds as a test users
-|   │   │   └── user.seeds.js           # list of test users
-|   |
-|   │   ├── 📂 utils/                  # Utility functions
-|   │   │   ├── generateToken.js        # JWT token generator
-|   │   │   └── validateInputs.js       # Input validation helpers           
-|   │   └── index.js                   # Main server file
-|   ├── package.json               # Dependencies for back-end
-|   ├── package-lock.json          # Lock file for dependencies
-|   └──.env                       # Environment variables
-├── .gitignore                 # Files and directories to ignore in Git
-├── README.md                  # Project documentation
-└── package.json               # Dependencies for the entire project
-```
----
 
 ## 🚀 Features
 ### 🔴 Real-Time Messaging
@@ -192,6 +101,98 @@ cloudinary.config({
 6. CORS for managing cross-origin requests
 
 ----
+
+📂 Project Structure
+```
+📁 Project-Directory/
+├── 📁 frontend/                  # Front-end application
+│   ├── 📁 public/                # Public folder for static assets
+│   │   ├── avatar.png             # default profile picture
+│   │   └── vite.png       
+│   │   
+│   ├── 📁 src/                    # Source files for React app
+│   │   ├── 📁 components/         # Reusable UI components
+│   │   │   ├── AuthImagePattern.jsx
+│   │   │   ├── ChatContainer.jsx
+│   │   │   ├── ChatHeader.jsx
+│   │   │   ├── MessageInput.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── NoChatSelected.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── 📁 skeletons/       # Placeholder skeleton components
+│   │   │       ├── MessageSkeleton.jsx
+│   │   │       └── SidebarSkeleton.jsx
+|   |   |
+│   │   ├── 📁 constant/            # Context for global state management
+│   │   │   └── index.js
+|   |   |   
+│   │   ├── 📁 lib/                 # Api calls
+│   │   │   ├── axios.js
+│   │   │  └── utils.js
+|   |   |   
+│   │   ├── 📁 pages/               # Page-level components 
+│   │   │   ├── Homepage.jsx
+│   │   │   ├── LoginPage.jsx
+│   │   │   ├── SettingsPage.jsx
+│   │   │   └── ProfilePage.jsx
+|   |   |
+│   │   ├── 📁 store/               # State Managment Files 
+│   │   │   ├── useAuthStore.js
+│   │   │   ├── useChatStore.js
+│   │   │   └── useThemeStore.js
+|   |   |
+│   │   ├── App.js                  # Main app component
+│   │   ├── main.jsx                # Entry point for React app
+│   │   └── index.css               # CSS or Tailwind configuration files
+|   |   
+|   ├── favicon-32x32.png           # App icon
+|   ├── Readme.md                   # Installed md file
+|   ├── index.html                  # Main HTML file
+|   ├── package-lock.json           # Detailed description of dependencies and core materials
+│   ├── eslint.config.js.json       # ESLint configuration
+│   ├── postcss.config.js           # PostCSS configuration
+│   ├── tailwind.config.js          # Tailwind CSS configuration
+│   ├── vite.config.js              # Vite configuration
+│   └── package.json                # Dependencies for front-end    
+|
+|   ├── 📁 backend/                    # Back-end application
+|   ├── 📂 src/                        # Source folder for the backend
+|   │   ├── 📂 controllers/            # Business logic for routes
+|   │   │   ├── authController.js       # Authentication-related logic
+|   │   │   └── messageController.js    # Message-related logic
+|   |   |  
+|   │   ├── 📂 lib/                    # Configuration files
+|   │   │   ├── db.js                   # MongoDB connection
+|   │   │   ├── cloudinary.js           # Cloudinary configuration
+|   │   │   ├── socket.js               # Socket configuration
+|   │   │   └── utils.js                
+|   |   |
+|   │   ├── 📂 middleware/             # Custom middleware (e.g., authentication)
+|   │   │   └── authMiddelware.js       # Error handling middleware
+|   |   |
+|   │   ├── 📂 models/                 # Mongoose schemas
+|   │   │   ├── usersmodel.js           # User schema
+|   │   │   └── messagemodel.js         # Message schema
+|   |   |
+|   │   ├── 📂 routes/                 # API routes
+|   │   │   ├── authRoutes.js           # Auth-related routes
+|   │   │   └── messageRoutes.js        # Message-related routes
+|   |   |
+|   │   ├── 📂 seeds/                  # Seeds as a test users
+|   │   │   └── user.seeds.js           # list of test users
+|   |
+|   │   ├── 📂 utils/                  # Utility functions
+|   │   │   ├── generateToken.js        # JWT token generator
+|   │   │   └── validateInputs.js       # Input validation helpers           
+|   │   └── index.js                   # Main server file
+|   ├── package.json               # Dependencies for back-end
+|   ├── package-lock.json          # Lock file for dependencies
+|   └──.env                       # Environment variables
+├── .gitignore                 # Files and directories to ignore in Git
+├── README.md                  # Project documentation
+└── package.json               # Dependencies for the entire project
+```
+---
 
 ## 📡 API Documentation  
 
