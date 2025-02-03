@@ -38,6 +38,10 @@ This real-time chat application delivers a modern, seamless messaging experience
 │   │   │   ├── LoginPage.jsx
 │   │   │   ├── SettingsPage.jsx
 │   │   │   └── ProfilePage.jsx
+│   │   ├── 📁 store/               # State Managment Files 
+│   │   │   ├── useAuthStore.js
+│   │   │   ├── useChatStore.js
+│   │   │   ├── useThemeStore.js
 │   │   ├── App.js                  # Main app component
 │   │   ├── main.jsx                # Entry point for React app
 │   │   ├── index.css               # # CSS or Tailwind configuration files
