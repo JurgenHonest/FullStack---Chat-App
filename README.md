@@ -8,6 +8,60 @@ This real-time chat application delivers a modern, seamless messaging experience
 🌟 **Live Demo:**  Check it out [here](https://fullstack-chat-app-ydz9.onrender.com/)
 
 ---
+📂 Project Structure
+project-root/
+├── client/                     # Front-end application
+│   ├── public/                 # Public folder for static assets
+│   │   ├── index.html          # Main HTML file
+│   │   ├── favicon.ico         # App icon
+│   │   └── manifest.json       # Web app manifest
+│   ├── src/                    # Source files for React app
+│   │   ├── assets/             # Static assets like images, fonts
+│   │   ├── components/         # Reusable UI components
+│   │   │   ├── Chat/           # Chat-specific components
+│   │   │   ├── Auth/           # Authentication components
+│   │   │   └── ThemeSelector/  # Components for theme switching
+│   │   ├── context/            # Context for global state management
+│   │   ├── hooks/              # Custom React hooks
+│   │   ├── pages/              # Page-level components (Login, Signup, Chat)
+│   │   ├── services/           # API calls (e.g., Axios setup)
+│   │   ├── App.js              # Main app component
+│   │   ├── index.js            # Entry point for React app
+│   │   └── styles/             # CSS or Tailwind configuration files
+│   └── package.json            # Dependencies for front-end
+│
+├── server/                     # Back-end application
+│   ├── config/                 # Configuration files
+│   │   ├── db.js               # MongoDB connection
+│   │   ├── cloudinary.js       # Cloudinary configuration
+│   │   └── env.js              # Environment variables setup
+│   ├── controllers/            # Business logic for routes
+│   │   ├── authController.js   # Authentication-related logic
+│   │   ├── messageController.js # Message-related logic
+│   │   └── userController.js   # User-related logic
+│   ├── middlewares/            # Custom middleware (e.g., authentication)
+│   │   ├── protectRoute.js     # JWT authentication middleware
+│   │   └── errorHandler.js     # Error handling middleware
+│   ├── models/                 # Mongoose schemas
+│   │   ├── User.js             # User schema
+│   │   ├── Message.js          # Message schema
+│   │   └── Profile.js          # Profile schema
+│   ├── routes/                 # API routes
+│   │   ├── authRoutes.js       # Auth-related routes
+│   │   ├── userRoutes.js       # User-related routes
+│   │   └── messageRoutes.js    # Message-related routes
+│   ├── sockets/                # Socket.IO event handlers
+│   │   └── chatSocket.js       # Chat socket logic
+│   ├── utils/                  # Utility functions
+│   │   ├── generateToken.js    # JWT token generator
+│   │   └── validateInputs.js   # Input validation helpers
+│   ├── server.js               # Main server file
+│   └── package.json            # Dependencies for back-end
+│
+├── .env                        # Environment variables
+├── .gitignore                  # Files and directories to ignore in Git
+├── README.md                   # Project documentation
+└── package.json                # Dependencies for the entire project
 
 ## 🚀 Features
 ### 🔴 Real-Time Messaging
