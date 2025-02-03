@@ -10,14 +10,14 @@ This real-time chat application delivers a modern, seamless messaging experience
 ---
 📂 Project Structure
 ```
-project-root/
-├── frontend/                   # Front-end application
-│   ├── public/                 # Public folder for static assets
-│   │   ├── avatar.png          # default profile picture
+📁 Project-Directory/
+├── 📁 frontend/                  # Front-end application
+│   ├── 📁 public/                # Public folder for static assets
+│   │   ├── avatar.png             # default profile picture
 │   │   └── vite.png       
 │   │   
-│   ├── src/                    # Source files for React app
-│   │   ├── components/         # Reusable UI components
+│   ├── 📁 src/                    # Source files for React app
+│   │   ├── 📁 components/         # Reusable UI components
 │   │   │   ├── AuthImagePattern.jsx
 │   │   │   ├── ChatContainer.jsx
 │   │   │   ├── ChatHeader.jsx
@@ -25,19 +25,22 @@ project-root/
 │   │   │   ├── Navbar.jsx
 │   │   │   ├── NoChatSelected.jsx
 │   │   │   ├── Sidebar.jsx
-│   │   │   └── skeletons/      # Placeholder skeleton components
+│   │   │   └── 📁 skeletons/       # Placeholder skeleton components
 │   │   │       ├── MessageSkeleton.jsx
 │   │   │       └── SidebarSkeleton.jsx
-│   │   ├── constant/           # Context for global state management
+│   │   ├── 📁 constant/            # Context for global state management
 │   │   │   ├── index.js
-│   │   ├── lib/                # Custom React hooks
+│   │   ├── 📁 lib/                 # Api calls
 │   │   │   ├── axios.js
 │   │   │   ├── utils.js
-│   │   ├── pages/              # Page-level components (Login, Signup, Chat)
-│   │   ├── services/           # API calls (e.g., Axios setup)
-│   │   ├── App.js              # Main app component
-│   │   ├── main.jsx            # Entry point for React app
-│   │   └── styles/             # CSS or Tailwind configuration files
+│   │   ├── 📁 pages/               # Page-level components 
+│   │   │   ├── Homepage.jsx
+│   │   │   ├── LoginPage.jsx
+│   │   │   ├── SettingsPage.jsx
+│   │   │   └── ProfilePage.jsx
+│   │   ├── App.js                  # Main app component
+│   │   ├── main.jsx                # Entry point for React app
+│   │   ├── index.css               # # CSS or Tailwind configuration files
 |   ├── favicon-32x32.png       # App icon
 |   ├── Readme.md               # Installed md file
 |   ├── index.html              # Main HTML file
