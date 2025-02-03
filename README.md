@@ -11,27 +11,44 @@ This real-time chat application delivers a modern, seamless messaging experience
 📂 Project Structure
 ```
 project-root/
-├── client/                     # Front-end application
+├── frontend/                   # Front-end application
 │   ├── public/                 # Public folder for static assets
-│   │   ├── index.html          # Main HTML file
-│   │   ├── favicon.ico         # App icon
-│   │   └── manifest.json       # Web app manifest
+│   │   ├── avatar.png          # default profile picture
+│   │   └── vite.png       
+│   │   
 │   ├── src/                    # Source files for React app
-│   │   ├── assets/             # Static assets like images, fonts
 │   │   ├── components/         # Reusable UI components
-│   │   │   ├── Chat/           # Chat-specific components
-│   │   │   ├── Auth/           # Authentication components
-│   │   │   └── ThemeSelector/  # Components for theme switching
-│   │   ├── context/            # Context for global state management
-│   │   ├── hooks/              # Custom React hooks
+│   │   │   ├── AuthImagePattern.jsx
+│   │   │   ├── ChatContainer.jsx
+│   │   │   ├── ChatHeader.jsx
+│   │   │   ├── MessageInput.jsx
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── NoChatSelected.jsx
+│   │   │   ├── Sidebar.jsx
+│   │   │   └── skeletons/      # Placeholder skeleton components
+│   │   │       ├── MessageSkeleton.jsx
+│   │   │       └── SidebarSkeleton.jsx
+│   │   ├── constant/           # Context for global state management
+│   │   │   ├── index.js
+│   │   ├── lib/                # Custom React hooks
+│   │   │   ├── axios.js
+│   │   │   ├── utils.js
 │   │   ├── pages/              # Page-level components (Login, Signup, Chat)
 │   │   ├── services/           # API calls (e.g., Axios setup)
 │   │   ├── App.js              # Main app component
-│   │   ├── index.js            # Entry point for React app
+│   │   ├── main.jsx            # Entry point for React app
 │   │   └── styles/             # CSS or Tailwind configuration files
-│   └── package.json            # Dependencies for front-end
-│
-├── server/                     # Back-end application
+|   ├── favicon-32x32.png       # App icon
+|   ├── Readme.md               # Installed md file
+|   ├── index.html              # Main HTML file
+|   ├── package-lock.json       # Detailed description of dependencies and core materials
+│   ├── .eslintrc.json          # ESLint configuration
+│   ├── postcss.config.js       # PostCSS configuration
+│   ├── tailwind.config.js      # Tailwind CSS configuration
+│   ├── vite.config.js          # Vite configuration
+│   └── package.json            # Dependencies for front-end    
+|
+├── backend/                     # Back-end application
 │   ├── config/                 # Configuration files
 │   │   ├── db.js               # MongoDB connection
 │   │   ├── cloudinary.js       # Cloudinary configuration
