@@ -9,6 +9,7 @@ This real-time chat application delivers a modern, seamless messaging experience
 
 ---
 📂 Project Structure
+```
 project-root/
 ├── client/                     # Front-end application
 │   ├── public/                 # Public folder for static assets
@@ -62,6 +63,8 @@ project-root/
 ├── .gitignore                  # Files and directories to ignore in Git
 ├── README.md                   # Project documentation
 └── package.json                # Dependencies for the entire project
+```
+---
 
 ## 🚀 Features
 ### 🔴 Real-Time Messaging
