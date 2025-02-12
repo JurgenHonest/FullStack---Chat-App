@@ -102,7 +102,7 @@ cloudinary.config({
 
 ----
 
-📂 Project Structure
+## 📂 Project Structure
 ```
 📁 Project-Directory/
 ├── 📁 frontend/                  # Front-end application
