@@ -100,6 +100,19 @@ cloudinary.config({
 5. cookie-parser for handling cookies<br>
 6. CORS for managing cross-origin requests
 
+## Setup .env file
+```
+MONGODB_URI=...
+PORT=5001
+JWT_SECRET=...
+
+CLOUDINARY_CLOUD_NAME=...
+CLOUDINARY_API_KEY=...
+CLOUDINARY_API_SECRET=...
+
+NODE_ENV=development
+
+```
 ----
 
 ## 📂 Project Structure
