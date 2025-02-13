@@ -269,6 +269,15 @@ Users can switch between 26 available themes.
 5. Responsive UI: 
 Tailored for desktops and mobile devices with responsive design.
 
+### Build App
+```
+npm run build
+```
+
+### Start the App
+```
+npm run start
+```
 ---
 
 ## 🚧 Future Enhancements
